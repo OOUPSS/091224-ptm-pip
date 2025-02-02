@@ -1,0 +1,16 @@
+git clone https://github.com/OOUPSS/091224-ptm-pip.git
+cd 091224-ptm-pip
+git checkout -b feature
+echo "pipupi" >> README.md
+echo "# Ignore " >> .gitignore
+git add README.md .gitignore
+git commit -m "????? .gitignore"
+git push origin feature
+git commit --amend -m "????? .gitignore (amend)"
+git push --force origin feature
+git checkout main
+git pull origin main
+git merge feature
+git push origin main
+history > history.txt
+doskey /history > history.txt
